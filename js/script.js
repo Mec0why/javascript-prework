@@ -17,23 +17,23 @@ function playGame(playerInput){
 	}
 
 	function displayResult(argComputerMove, argPlayerMove){
-		console.log( 'moves: ', computerMove, playerMove);
+		console.log( 'moves: ', argComputerMove, argPlayerMove);
 		if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
-			return 'Ty wygrywasz!';
+			printMessage('Ty wygrywasz!');
 		} if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
-			return 'Tym razem Przegrywasz :(';
+			printMessage('Tym razem Przegrywasz :(');
 		} if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
-			return 'Tym razem Przegrywasz :(';
+			printMessage('Tym razem Przegrywasz :(');
 		} if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
-			return 'Ty wygrywasz!';
+			printMessage('Ty wygrywasz!');
 		} if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
-			return 'Ty wygrywasz!';
+			printMessage('Ty wygrywasz!');
 		} if(argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
-			return 'Tym razem Przegrywasz :(';
+			printMessage('Tym razem Przegrywasz :(');
 		} if(argComputerMove == argPlayerMove){
-			return 'Remis, spróbuj Ponownie';
-		} if(argPlayerMove != ('kamień' &&  'papier' && 'nożyce')){
-			return 'Wybierz poprawne id Ruchu';
+			printMessage('Remis, spróbuj Ponownie');
+		} if(argPlayerMove != 'kamień' &&  argPlayerMove != 'papier' && argPlayerMove != 'nożyce'){
+			printMessage('Wybierz poprawne id Ruchu');
 		}
 	}
 
@@ -57,8 +57,6 @@ function playGame(playerInput){
 
 	/*Wyswietlenie Wyniku*/
 	let gameResult = displayResult(computerMove, playerMove);
-
-	printMessage(gameResult);
 }
 
 document.getElementById('play-rock').addEventListener('click', function(){
