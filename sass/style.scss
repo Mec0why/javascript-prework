@@ -1,0 +1,67 @@
+/*Global*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+margin: 0;
+font-size: 16px;
+line-height: 1.7;
+height: 100vh;
+position: relative;
+background: rgba(0, 0, 0, 1);
+}
+
+body::before {
+    content:'';
+    position: absolute;
+    background-image: url('https://images.pexels.com/photos/1319459/pexels-photo-1319459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+    }
+
+
+.container {
+max-width: 1140px;
+padding: 0 20px;
+margin: 25px auto; 
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: space-between;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto 0 auto;
+    min-width: 160px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    border: 2px solid #fed330;
+    background-position: 100% 0;
+    background-size: 300%;
+    background-color: black;
+    background-image: linear-gradient(90deg, #fed330 50%, transparent 50%);
+    transition: all 1s;
+
+    &:hover {
+        background-position: 0 100%;
+        color: white;
+        }
+}
+
+#messages {
+    display: inline-block;
+    flex: 0 0 100%;
+    text-align: center;
+}
