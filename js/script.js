@@ -33,7 +33,7 @@
       } else if (argComputerMove == argPlayerMove) {
         printMessage("Remis, spróbuj Ponownie");
       } else {
-        printMessage();
+        printMessage("Wybierz poprawne id Ruchu");
       }
     };
 
