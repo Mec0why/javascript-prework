@@ -32,12 +32,8 @@
         printMessage("Tym razem Przegrywasz :(");
       } else if (argComputerMove == argPlayerMove) {
         printMessage("Remis, spróbuj Ponownie");
-      } else if (
-        argPlayerMove != "kamień" &&
-        argPlayerMove != "papier" &&
-        argPlayerMove != "nożyce"
-      ) {
-        printMessage("Wybierz poprawne id Ruchu");
+      } else {
+        printMessage();
       }
     };
 
@@ -46,19 +42,19 @@
 
     console.log("Wylosowana liczba to: " + randomNumber);
 
-    const ComputerMove = getMoveName(randomNumber);
+    const computerMove = getMoveName(randomNumber);
 
-    printMessage("Mój ruch to: " + ComputerMove);
+    printMessage("Mój ruch to: " + computerMove);
 
     /*Wybranie Ruchu przez Gracza*/
 
     console.log("Gracz wpisał: " + playerInput);
 
-    const PlayerMove = getMoveName(playerInput);
+    const playerMove = getMoveName(playerInput);
 
-    printMessage("Twój ruch to: " + PlayerMove);
+    printMessage("Twój ruch to: " + playerMove);
 
-    displayResult(ComputerMove, PlayerMove);
+    displayResult(computerMove, playerMove);
   };
 
   const playRock = document.getElementById("play-rock");
