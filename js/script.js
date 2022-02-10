@@ -6,9 +6,9 @@
 		const getMoveName = function(argMoveId){
 			if(argMoveId == 1){
 				return 'kamień';
-			} if(argMoveId == 2){
+			} else if(argMoveId == 2){
 				return 'papier';
-			} if(argMoveId == 3){
+			} else if(argMoveId == 3){
 				return 'nożyce';
 			}
 
@@ -20,19 +20,19 @@
 			console.log( 'moves: ', argComputerMove, argPlayerMove);
 			if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
 				printMessage('Ty wygrywasz!');
-			} if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+			} else if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
 				printMessage('Tym razem Przegrywasz :(');
-			} if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+			} else if(argComputerMove == 'papier' && argPlayerMove == 'kamień'){
 				printMessage('Tym razem Przegrywasz :(');
-			} if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
+			} else if(argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
 				printMessage('Ty wygrywasz!');
-			} if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+			} else if(argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
 				printMessage('Ty wygrywasz!');
-			} if(argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+			} else if(argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
 				printMessage('Tym razem Przegrywasz :(');
-			} if(argComputerMove == argPlayerMove){
+			} else if(argComputerMove == argPlayerMove){
 				printMessage('Remis, spróbuj Ponownie');
-			} if(argPlayerMove != 'kamień' &&  argPlayerMove != 'papier' && argPlayerMove != 'nożyce'){
+			} else if(argPlayerMove != 'kamień' &&  argPlayerMove != 'papier' && argPlayerMove != 'nożyce'){
 				printMessage('Wybierz poprawne id Ruchu');
 			}
 		}
