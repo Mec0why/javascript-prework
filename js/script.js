@@ -46,19 +46,19 @@
 
     console.log("Wylosowana liczba to: " + randomNumber);
 
-    const argComputerMove = getMoveName(randomNumber);
+    const ComputerMove = getMoveName(randomNumber);
 
-    printMessage("Mój ruch to: " + argComputerMove);
+    printMessage("Mój ruch to: " + ComputerMove);
 
     /*Wybranie Ruchu przez Gracza*/
 
     console.log("Gracz wpisał: " + playerInput);
 
-    const argPlayerMove = getMoveName(playerInput);
+    const PlayerMove = getMoveName(playerInput);
 
-    printMessage("Twój ruch to: " + argPlayerMove);
+    printMessage("Twój ruch to: " + PlayerMove);
 
-    displayResult(argComputerMove, argPlayerMove);
+    displayResult(ComputerMove, PlayerMove);
   };
 
   const playRock = document.getElementById("play-rock");
